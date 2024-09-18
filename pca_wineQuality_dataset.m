@@ -3,7 +3,7 @@ data = readtable('winequality-red.csv', 'VariableNamingRule', 'preserve'); % rea
 figure; % opens new window to display plots
 for i = 1:width(data)-1 % loops through each column and plots a histogram to show the distribution(data points concentration and spread of values)
     subplot(4, 3, i);
-    histogram(data{:,i});
+    histogram(data{:,i}); % extract all rows from i(th) column resulting column vector with all the values for that feature, {} returns data in array
     title(data.Properties.VariableNames{i});
 end
 

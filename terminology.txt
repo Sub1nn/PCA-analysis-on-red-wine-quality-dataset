@@ -40,6 +40,8 @@ Understanding the distribution of a feature helps in:
 -- Outliers: Unusual or extreme values can affect the performance of machine learning models. Detecting these outliers visually helps in deciding whether to handle or remove them.
 -- Feature Engineering: If the distribution is spread out, you might decide to bin the values or create new features based on the ranges.
 
-- Summary:
--- Distribution of a feature shows how the data points (rows in your dataset) are spread across the possible values of that feature (column).
---The histogram plots this distribution, where the x-axis shows the possible values, and the y-axis shows how many data points have those values (or fall into specific ranges).
+- zscore:
+-- The zscore function standardizes the data by centering and scaling each column.
+-- Centering involves subtracting the mean of each column from the column values.
+-- Scaling involves dividing the centered values by the standard deviation of each column.
+-- The result is that each column of data_scaled will have a mean of 0 and a standard deviation of 1.
