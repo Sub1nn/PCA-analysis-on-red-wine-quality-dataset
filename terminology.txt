@@ -45,3 +45,14 @@ Understanding the distribution of a feature helps in:
 -- Centering involves subtracting the mean of each column from the column values.
 -- Scaling involves dividing the centered values by the standard deviation of each column.
 -- The result is that each column of data_scaled will have a mean of 0 and a standard deviation of 1.
+
+- A boxplot (or box-and-whisker plot) is a graphical representation of the distribution of a dataset. It shows the median, quartiles, and potential outliers.
+
+- Why Scale and Center the Data?
+-- Standardization (scaling and centering) transforms the data to have a mean of 0 and a standard deviation of 1. This can help in various ways:
+--- Equal Weighting: Features with different units or ranges are brought to the same scale, so they contribute equally in algorithms sensitive to feature scales (e.g., PCA, k-means clustering).
+--- Improved Convergence: Some algorithms (like gradient descent-based methods) converge faster when features are on a similar scale.
+
+- Why Use Boxplots?
+-- Visualizing Distribution: Boxplots help visualize the distribution of each feature after scaling, showing how well the scaling was applied and identifying any remaining outliers.
+-- Comparing Features: By comparing the boxplots of different features, you can see if any features have unusual distributions or outliers.

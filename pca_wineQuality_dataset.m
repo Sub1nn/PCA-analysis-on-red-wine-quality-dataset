@@ -8,7 +8,7 @@ for i = 1:width(data)-1 % loops through each column and plots a histogram to sho
 end
 
 % Scale and center the dataset
-data_scaled = zscore(data{:,1:end-1});
+data_scaled = zscore(data{:,1:end-1}); 
 figure;
 subplot(1, 1, 1);
 boxplot(data_scaled);
